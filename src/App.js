@@ -1,15 +1,11 @@
 import './App.css';
-
+import QuestionBox from '/Users/jayp/Desktop/application-projects/chatter-box/src/Components/QuestionsSection/QuestionBox.js'
 function App() {
   return (
     <div className="App">
-      <h1>Chatter Bot</h1>
-      <div>
-        <input type="text"required/>
-        <p>Ask Question</p>
-      </div>  
+      <QuestionBox />
     </div>
-  );
+  )
 }
 
 export default App;
