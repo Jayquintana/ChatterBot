@@ -1,0 +1,30 @@
+
+.text-box{
+  border: 0px;
+  border-bottom: 2px solid black;
+  outline: none;
+  background: transparent;
+  color: black;
+  width: 10cm;
+
+}
+.text-box:focus{
+  border-bottom: 2px solid blue;
+}
+ .text-box+.ask-question{
+   color: white;
+   color: black;
+   transition: 0.3s linear;
+   font-size: 17px;
+ }
+
+ .text-box:focus{
+   top: -16px;
+   font-size: 12px;
+   color: grey;
+ }
+
+ .ask-question:hover {
+  cursor: pointer;
+  font-size: 20px;
+ }
