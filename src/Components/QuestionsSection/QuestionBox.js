@@ -1,7 +1,7 @@
 import React from 'react'
 import './QuestionBox.css'
 
-const QuestionBox = ({userQuestion, setUserQuestion, responses, botAnswer, postQuestion }) => {
+const QuestionBox = ({userQuestion, setUserQuestion, responses, botAnswer, postQuestion, setBotAnswer}) => {
 
 
 const getInput = (e) => {
@@ -10,15 +10,6 @@ const getInput = (e) => {
 
 const addResponse = () => {
  postQuestion()
- let saveResponse = {
-  id: responses.length + 1,
-  question: userQuestion,
-  botAnswer: botAnswer
- }
- if (saveResponse.question || saveResponse.botAnswer) {
-  responses.push(saveResponse)
- }
- setUserQuestion('')
 }
 
   return (
