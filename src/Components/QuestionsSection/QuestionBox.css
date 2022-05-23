@@ -7,6 +7,10 @@
   width: 10cm;
 }
 
+.chatter-bot {
+  font-family: 'Roboto', sans-serif;
+}
+
 .text-container {
   display: flex;
   flex-direction: column;
@@ -14,7 +18,7 @@
 }
 
 .text-box:focus{
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid white;
 }
 .text-box+.ask-question{
     color: white;
@@ -32,3 +36,8 @@
     cursor: pointer;
     font-size: 20px;
   }
+
+    ::placeholder {
+      color: white;
+      opacity: 50%;
+    }

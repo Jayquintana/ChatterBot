@@ -3,6 +3,7 @@ width: 100%;
 height: 20%;
 align-self: center;
 margin-left: 2%;
+margin-top: 2%;
 }
 
 .question-response,
@@ -16,7 +17,7 @@ margin-left: 2%;
  width: 50%;
  height: 50%;
  border: 1px solid black;
- background-color: grey;
+ background-color: #778899;
  border-radius: 5%;
  overflow: hidden;
  overflow-y: scroll;
