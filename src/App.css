@@ -4,8 +4,12 @@ flex-direction: column;
 align-items: center;
 }
 
+.responses-text {
+  text-align: center;
+}
+
 body {
-  background-color: azure;
+  background-color: #CD5C5C;
 }
 
 html, body, #root, .App {

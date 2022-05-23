@@ -66,7 +66,7 @@ function App() {
       userQuestion={userQuestion} 
       setUserQuestion={setUserQuestion} />
       <div className='responses-container'> 
-        <h2>Responses</h2>
+        <h2 className='responses-text'>Responses</h2>
       {displayResponse()}
       </div>
       < TalkingRobot />
