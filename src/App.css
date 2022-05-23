@@ -2,9 +2,17 @@
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: center;
+}
+
+.responses-text {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-  background-color: azure;
+  background-color: #CD5C5C;
+}
+
+html, body, #root, .App {
+  height: 100%;
 }

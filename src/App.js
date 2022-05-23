@@ -11,6 +11,7 @@ function App() {
   const [botAnswer, setBotAnswer] = useState('')
   const [responses, setResponses] = useState([])
 
+
     useEffect(() => {
     if(botAnswer && userQuestion) {
     createResponse()
@@ -39,7 +40,7 @@ function App() {
 
     const postQuestion = () => {
     const configuration = new Configuration({
-      apiKey: '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',
+      apiKey: process.env.REACT_APP_API_KEY,
     });
     const openai = new OpenAIApi(configuration);
 
@@ -65,7 +66,10 @@ function App() {
       botAnswer={botAnswer} 
       userQuestion={userQuestion} 
       setUserQuestion={setUserQuestion} />
+      <div className='responses-container'> 
+        <h2 className='responses-text'>Responses</h2>
       {displayResponse()}
+      </div>
       < TalkingRobot />
     </div>
   )
