@@ -1,6 +1,6 @@
 import './App.css';
-import QuestionBox from '/Users/jayp/Desktop/application-projects/chatter-box/src/Components/QuestionsSection/QuestionBox.js'
-import SavedResponses from '/Users/jayp/Desktop/application-projects/chatter-box/src/Components/ResponseSection/SavedResponses.js'
+import QuestionBox from './Components/QuestionsSection/QuestionBox'
+import SavedResponses from './Components/ResponseSection/SavedResponses'
 import TalkingRobot from './Components/TalkingRobot/TalkingRobot';
 import React, { useState, useEffect } from 'react';
 const { Configuration, OpenAIApi } = require("openai");
