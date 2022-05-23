@@ -40,7 +40,7 @@ function App() {
 
     const postQuestion = () => {
     const configuration = new Configuration({
-      apiKey: process.env.REACT_APP_API_KEY,
+      apiKey: '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',
     });
     const openai = new OpenAIApi(configuration);
 
