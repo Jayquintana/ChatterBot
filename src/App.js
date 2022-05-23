@@ -39,7 +39,7 @@ function App() {
 
     const postQuestion = () => {
     const configuration = new Configuration({
-      apiKey: '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',
+      apiKey: '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',
     });
     const openai = new OpenAIApi(configuration);
 
@@ -65,7 +65,10 @@ function App() {
       botAnswer={botAnswer} 
       userQuestion={userQuestion} 
       setUserQuestion={setUserQuestion} />
+      <div className='responses-container'> 
+        <h2>Responses</h2>
       {displayResponse()}
+      </div>
       < TalkingRobot />
     </div>
   )
