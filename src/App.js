@@ -1,6 +1,7 @@
 import './App.css';
 import QuestionBox from '/Users/jayp/Desktop/application-projects/chatter-box/src/Components/QuestionsSection/QuestionBox.js'
 import SavedResponses from '/Users/jayp/Desktop/application-projects/chatter-box/src/Components/ResponseSection/SavedResponses.js'
+import TalkingRobot from './Components/TalkingRobot/TalkingRobot';
 import React, { useState, useEffect } from 'react';
 const { Configuration, OpenAIApi } = require("openai");
 
@@ -27,7 +28,6 @@ function App() {
     responses.push(saveResponse)
     setUserQuestion('')
     setBotAnswer('')
-   
   }
 
     const displayResponse = () => {
@@ -53,6 +53,7 @@ function App() {
       stop: [" Human:", " AI:"],
     })
     .then((response) => {
+      console.log(response.data.choices);
       setBotAnswer(response.data.choices[0].text)
     }).catch(err => console.log(err))
     }
@@ -65,6 +66,7 @@ function App() {
       userQuestion={userQuestion} 
       setUserQuestion={setUserQuestion} />
       {displayResponse()}
+      < TalkingRobot />
     </div>
   )
 }

@@ -4,12 +4,13 @@ import './SavedResponses.css'
 const SavedResponses = ({question, botAnswer}) => {
 
   return (
-   <> 
+  <div className='responses-container'> 
+    <h2>Responses</h2>
     <div className='saved-response'>
-     <p>Question: {question}</p>
-     <p>Chatter Bot Answer: {botAnswer}</p>
+      <p className='question-response'>Question: {question}</p>
+      <p className='bot-response'>Chatter Bot: {botAnswer}</p>
     </div>
-   </>
+  </div>
   )
 }
 
