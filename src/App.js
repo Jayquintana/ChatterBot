@@ -10,8 +10,7 @@ function App() {
   const [userQuestion, setUserQuestion] = useState('')
   const [botAnswer, setBotAnswer] = useState('')
   const [responses, setResponses] = useState([])
-
-  console.log(process.env.REACT_APP_API_KEY);
+  
     useEffect(() => {
     if(botAnswer && userQuestion) {
     createResponse()
