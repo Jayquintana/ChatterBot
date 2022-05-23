@@ -10,8 +10,7 @@ function App() {
   const [userQuestion, setUserQuestion] = useState('')
   const [botAnswer, setBotAnswer] = useState('')
   const [responses, setResponses] = useState([])
-
-
+  
     useEffect(() => {
     if(botAnswer && userQuestion) {
     createResponse()
@@ -40,7 +39,7 @@ function App() {
 
     const postQuestion = () => {
     const configuration = new Configuration({
-      apiKey: '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',
+      apiKey: process.env.REACT_APP_API_KEY,
     });
     const openai = new OpenAIApi(configuration);
 
