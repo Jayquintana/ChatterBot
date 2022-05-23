@@ -1,4 +1,3 @@
-import React from 'react'
 import './QuestionBox.css'
 
 const QuestionBox = ({userQuestion, setUserQuestion, responses, botAnswer, postQuestion, setBotAnswer}) => {
